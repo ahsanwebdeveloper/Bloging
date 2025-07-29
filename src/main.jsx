@@ -8,7 +8,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Home from './pages/Home.jsx'
 import Protected from './components/AuthLayout.jsx'
 import Login from './components/Login.jsx'
-import SignUp from './components/SignUp.jsx'
+import Signup from './pages/Signup.jsx'
 import AllPost from './pages/AllPost.jsx'
 import AddPost from './pages/addPost.jsx'
 import EditedPost from './pages/EditedPost.jsx'
@@ -34,7 +34,7 @@ const router = createBrowserRouter([
         path:'/signup',
         element:(
           <Protected authentication={false}>
-            <SignUp/>
+            <Signup/>
           </Protected>
         )
       },
